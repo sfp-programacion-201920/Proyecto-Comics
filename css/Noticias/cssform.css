@@ -2,3 +2,13 @@ body
 {
     background-color: cadetblue;
 }
+footer    { 
+    padding: 1%;
+    text-align: center;
+    background-color: purple;
+}
+img {
+    display: block;
+    max-width: 40%;
+    width: 20%;
+  } 
