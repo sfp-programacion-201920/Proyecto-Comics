@@ -8,6 +8,7 @@
     <title>Formulario</title>
     <link rel="stylesheet" href="../css/Noticias/cssform.css">
     <script src="../JavaScript.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon&display=swap" rel="stylesheet">
     <!--FALTA LO DEL POST Y 3 CONTROLES INTERACTIVOS MÁS-->
 </head>
 
@@ -16,74 +17,75 @@
     <a href="../index.html#inicio"><img src="../images/index/menu.1.png" alt="menu" width="100"></a>
     <header>Cuestionario</header>
     <main>
-        <section>
-            <legend>Datos</legend>
-            <form name="Formulario de registro" id="form" action="mailto:manuhidalgonieto@gmail.com" method="POST"
-                target="_self" enctype="multipart/form-data">
-                <fieldset>
-                    <label>Introduce tu nombre: </label><input type="text" name="Nombre" size="15" autocomplete="name"
-                        autofocus placeholder="Nombre"><br><br>
-                    <label>Introduce tus apellidos: </label><input type="text" name="Apellidos" size="50"
-                        autocomplete="name" placeholder="Apellidos"><br><br>
-                    <label>Nickname:</label> <input type="text" name="Apodo" size="10" autocomplete="nickname"><br><br>
-                    <label>Escribe la contraseña: </label><input type="password" name="Contraseña" minlength="6"
-                        maxlength="18" id="contraseña" onblur="email()"><br><br>
-                    <label>Introduce tu edad: </label><input type="number" name="Edad" step="1" placeholder="18"
-                        min="18"><br><br>
-                    <label>Número de telefono: </label><input type="tel" name="Telefono" id="telefono"
-                        onblur="telefono()" value="+34"><br><br>
+        <form name="Formulario de registro" id="form" action="mailto:manuhidalgonieto@gmail.com" method="POST"
+            target="_self" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos</legend>
+                <label for="Nombre">Introduce tu nombre: </label><input id="Nombre" type="text" name="Nombre" size="15"
+                    autocomplete="name" autofocus placeholder="Nombre"><br><br>
+                <label for="Apellidos">Introduce tus apellidos: </label><input id="Apellidos" type="text" name="Apellidos" size="50"
+                    autocomplete="name" placeholder="Apellidos"><br><br>
+                <label for=Apodo>Nickname:</label> <input type="text" id="Apodo" name="Apodo" size="10"
+                    autocomplete="nickname"><br><br>
+                <label for="contraseña">Escribe la contraseña: </label><input type="password" name="Contraseña"
+                    minlength="6" maxlength="18" id="contraseña" onblur="email()"><br><br>
+                <label for=Edad>Introduce tu edad: </label><input id="Edad" type="number" name="Edad" step="1" placeholder="18"
+                    min="18"><br><br>
+                <label for="telefono">Número de telefono: </label><input id="telefono" type="tel" name="Telefono"
+                    onblur="telefono()" value="+34"><br><br>
 
-                    <label>Escribe tu Correo </label><input type="email" id="email" name="email" size="50"
-                        autocomplete="email" placeholder="@gmail.com, @outlook.es" onblur="email()"><br><br>
+                <label for=email>Escribe tu Correo </label><input type="email" id="email" name="email" size="50"
+                    autocomplete="email" placeholder="@gmail.com, @outlook.es" onblur="email()"><br><br>
 
-                    <label>Introduce tu fecha de nacimiento: </label><input type="date" name="Fecha"><br><br>
-                    <label>Introduce tu uso horario para ajustar nuestros horarios al tuyo: </label><input
-                        type="datetime-local" name="Hora"><br><br>
-                    <label>Sube una foto de perfil: </label><input type="file" name="Icono" accept=".jpg, .png"><br><br>
-                    <label id="Pilotos">Seleccione su superheroe favorito</label><br>
-                    <select name="Pilotos">
-                        <option value="Superman">Superman</option>
-                        <option value="Batman">Batman</option>
-                        <option value="El hombre marciano">El hombre marciano</option>
-                        <option value="Flash">Flash</option>
-                        <option value="Hawkman">Hawkman</option>
-                        <option value="Robin">Robin</option>
-                        <option value="Arrow">Arrow</option>
-                    </select>
-                    <br><br>
-                    <label>Selecciona los personajes que quieres recibir información de sus cómics:</label><br>
-                    <input type="checkbox" name="Batman"><label id="Batman">Batman</label><br>
-                    <input type="checkbox" name="Superman"><label id="Superman">Superman</label><br>
-                    <input type="checkbox" name="Flash"><label id="Flash">Flash</label><br>
-                    <input type="checkbox" name="Robin"><label id="Robin">Robin</label><br>
-                    <input type="checkbox" name="Arrow"><label id="Arrow">Arrow</label><br>
-                    <br><br>
-                    <label>Selecciona tus comics favoritos:</label><br>
-                    <input type="radio" name="La broma asesina"><label id="La broma asesina">La broma
-                        asesina</label><br>
-                    <input type="radio" name="El caballero oscuro vuelve"><label id="El caballero oscuro vuelve">El
-                        caballero oscuro vuelve</label><br>
-                    <input type="radio" name="El hombre del mañana"><label id="El hombre del mañana">El hombre del
-                        mañana</label><br>
-                    <input type="radio" name="Una muerte en la familia"><label id="Una muerte en la familia">Una muerte
-                        en la familia</label><br>
-                    <br><br>
-                    <label id="Satisfaccion">Nivel de satisfacción con Rebirth</label><br>
-                    <input type="range" name="Satisfaccion" min="0" max="10" step="1"><br><br>
-                    <label id="Categorias">¿Que superheroínas te gustan?</label><br><textarea name="Categorias"
-                        rows="10" placeholder="Supergirl, Catwoman, Zatanna, etc." cols="55"></textarea><br><br>
-                </fieldset>
+                <label for="Fecha">Introduce tu fecha de nacimiento: </label><input id="Fecha" type="date" name="Fecha"><br><br>
+                <label for="Hora">Introduce tu uso horario para ajustar nuestros horarios al tuyo: </label><input
+                    type="datetime-local" name="Hora" id="Hora"><br><br>
+                <label for="Icono">Sube una foto de perfil: </label><input id="Icono" type="file" name="Icono"
+                    accept=".jpg, .png"><br><br>
+                <label for="Heroes">Seleccione su superheroe favorito</label><br>
+                <select name="Heroes" id="Heroes">
+                    <option value="Superman">Superman</option>
+                    <option value="Batman">Batman</option>
+                    <option value="El hombre marciano">El hombre marciano</option>
+                    <option value="Flash">Flash</option>
+                    <option value="Hawkman">Hawkman</option>
+                    <option value="Robin">Robin</option>
+                    <option value="Arrow">Arrow</option>
+                </select>
+                <br><br>
+                <label>Selecciona los personajes que quieres recibir información de sus cómics:</label><br>
+                <input type="checkbox" name="Batman"><label id="Batman">Batman</label><br>
+                <input type="checkbox" name="Superman"><label id="Superman">Superman</label><br>
+                <input type="checkbox" name="Flash"><label id="Flash">Flash</label><br>
+                <input type="checkbox" name="Robin"><label id="Robin">Robin</label><br>
+                <input type="checkbox" name="Arrow"><label id="Arrow">Arrow</label><br>
+                <br><br>
+                <label>Selecciona tus comics favoritos:</label><br>
+                <input type="radio" name="La broma asesina"><label id="La_broma_asesina">La broma
+                    asesina</label><br>
+                <input type="radio" name="El caballero oscuro vuelve"><label id="El_caballero_oscuro_vuelve">El
+                    caballero oscuro vuelve</label><br>
+                <input type="radio" name="El hombre del mañana"><label id="El_hombre_del_mañana">El hombre del
+                    mañana</label><br>
+                <input type="radio" name="Una muerte en la familia"><label id="Una_muerte_en_la_familia">Una muerte
+                    en la familia</label><br>
+                <br><br>
+                <label for="Satisfaccion">Nivel de satisfacción con Rebirth</label><br>
+                <input id="Satisfaccion" type="range" name="Satisfaccion" min="0" max="10" step="1"><br><br>
+                <label for="Categorias">¿Que superheroínas te gustan?</label><br><textarea id="Categorias" name="Categorias" rows="10"
+                    placeholder="Supergirl, Catwoman, Zatanna, etc." cols="55"></textarea><br><br>
+            </fieldset>
 
-                <button type="submit" value="enviar" name="enviar" id="enviar" autofocus><label for="enviar">Enviar los
-                        datos</label></button>
-                <button type="reset" value="reset" name="reset" id="reset" autofocus><label for="reset">Restablecer los
-                        datos</label></button>
-            </form>
+            <button type="submit" value="enviar" name="enviar" id="enviar">Enviar los
+                datos</button>
+            <button type="reset" value="reset" name="reset" id="reset">Restablecer los
+                datos</button>
+        </form>
     </main>
     <footer>
         <a id="RedesSociales"></a>
         <a href="twitter.com">Twitter</a>
-        <img src="../images/index/twitter.png" width="20" style="float:inherit; margin: 0px 0px 0px 475px"
+        <img src="../images/index/twitter.png" width="20" style="float:inherit; margin: 0cm 0cm 0cm 18cm"
             alt="Portada de DC">
         <br>
 

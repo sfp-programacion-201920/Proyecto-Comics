@@ -1,96 +1,100 @@
-body
-{
-      padding: 16px;
-      background-color: rgb(0, 119, 255);   /*aquí he indicado que el fondo de la página web sea azul */
-      font-family: 'Coming Soon', cursive;
-        background-image: url(https://images3.alphacoders.com/573/thumb-1920-57329.jpg);
-        opacity: 95%;
-        background-color: rgb(0, 17, 255);
-        background-attachment: fixed;
-        display: block;
-        margin: auto;
-        text-align: center;
-    }
-       
-    img:hover
-{
-    background: red;
-    border: solid blue 1px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    text-decoration: none;
+body {
+    padding: 16px;
+    background-color: rgb(0, 119, 255);
+    /*aquí he indicado que el fondo de la página web sea azul */
+    font-family: 'Coming Soon', cursive;
+    background-image: url(https://images3.alphacoders.com/573/thumb-1920-57329.jpg);
+    opacity: 95%;
+    background-color: rgb(0, 17, 255);
+    background-attachment: fixed;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+img:hover {
+    opacity: 1.0;
 }
 
 img {
-      display: block;
-      max-width: 40%;
-      width: 20%;
-    }
+    display: block;
+    max-width: 20cm;
+    width: 10cm;
+    opacity: 80%;
+}
 
+div {
+    color: black;
+}
 
+header {
+    background-color: rgb(0, 119, 255);
+    padding: 15px;
+    text-align: center;
+}
 
-    div{
-      color: black;
-  }
-  header {
-      background-color: rgb(0, 119, 255) ; 
-      padding: 15px;
-      text-align: center;
-  }
-  nav {
-      
-      background-color: white;
-      padding-top: 0px;
-      padding-left: 1px;
-      padding-top: 0px;
-      padding-right: 1px;
-      text-align: center;
-      align-items: center;
-  }
-  main {
-      background-color: yellow;
-      text-align: center;
-  }
-  section {
-      background-color: yellow ;
-      
-  }
-  
-  
-  article {
-      background-color: white;
-      margin: 15px;
-      padding: 5px;
-      text-align: center;
-      border-style: solid;
-      border-top-width: thin;
-      border-bottom-width:thin;
-      border-left-width:thin;
-      border-right-width:thin 
-  }
-  aside    { 
-      background-color: orange;
-      padding: 1%;
-      text-align: center;
-  }
-  footer    { 
-      padding: 1%;
-      text-align: center;
-      background-color: purple;
-  }
+nav {
+    background-color: white;
+    padding-top: 0px;
+    padding-left: 1px;
+    padding-top: 0px;
+    padding-right: 1px;
+    text-align: center;
+    align-items: center;
+}
 
-  .button{
-      margin: 100px;
-  }
- 
-  .seccion_arrow_y_batman {
-      background-color: chartreuse;
-  }
-.seccion_robin_y_superman {
+main {
+    background-color: yellow;
+    text-align: center;
+}
+
+section {
     background-color: yellow;
 }
-.seccion_flash_y_historia {
+
+article {
+    background-color: white;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+    border-style: solid;
+    border-top-width: thin;
+    border-bottom-width: thin;
+    border-left-width: thin;
+    border-right-width: thin
+}
+
+aside {
+    background-color: orange;
+    padding: 1%;
+    text-align: center;
+}
+
+footer {
+    padding: 1%;
+    text-align: center;
+    background-color: purple;
+}
+
+.button {
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+}
+
+#seccion_arrow_y_batman {
+    background-color: chartreuse;
+}
+
+#seccion_robin_y_superman {
+    background-color: yellow;
+}
+
+#seccion_flash_y_historia {
     background-color: red;
 }
-  
+#RedesSociales {
+    display: block;
+    max-width: 30%;
+    width: 10%;
+}

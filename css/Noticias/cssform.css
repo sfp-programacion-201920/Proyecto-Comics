@@ -1,14 +1,22 @@
-body
-{
+body {
     background-color: cadetblue;
+    font-family: 'Coming Soon', cursive;
 }
-footer    { 
+
+footer {
     padding: 1%;
     text-align: center;
     background-color: purple;
 }
+
 img {
     display: block;
     max-width: 40%;
     width: 20%;
-  } 
+}
+
+#RedesSociales {
+    display: block;
+    max-width: 30%;
+    width: 10%;
+}

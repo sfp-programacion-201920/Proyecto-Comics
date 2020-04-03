@@ -1,15 +1,38 @@
-body
-{
+body {
       padding: 16px;
-      background-color: rgb(153, 0, 0);  
+      background-color: rgb(153, 0, 0);
       color: rgb(233, 190, 0);
+      font-family: 'Coming Soon', cursive;
 }
+
 img {
       display: block;
       max-width: 40%;
       width: 20%;
-    }
-    nav {
+}
+
+nav {
       width: 30%;
       max-width: 60%;
+}
+
+footer {
+      padding: 1%;
+      text-align: center;
+      background-color: purple;
+}
+
+table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #ffffff;
+}
+
+td {
+      border: 2px solid black;
+}
+#RedesSociales {
+      display: block;
+      max-width: 30%;
+      width: 10%;
 }
